@@ -1,0 +1,14 @@
+rm:
+  serviceRegistry:
+    username: serviceregistry
+    password: 'rm123sr'
+  auth:
+    jwtSecret: Zq4t7w!z%C*F-JaNdRgUkXp2s5u8x/A?D(G+KbPeShVmYq3t6w9y$B&E)H@McQfT
+    jwtExpirationMs: 14400000
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: 'http://${rm.serviceRegistry.username}:${rm.serviceRegistry.password}@localhost:8761/eureka'
+  instance:
+    hostname: localhost
