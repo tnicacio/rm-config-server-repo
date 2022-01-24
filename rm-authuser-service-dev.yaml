@@ -27,18 +27,15 @@ spring:
 
 logging:
   level:
-    com.ead: INFO
+    com.tnicacio: INFO
     root: INFO
     org.springframework.web: INFO
     org.hibernate: INFO
 
-ead:
-  api:
-    url:
-      course: 'http://ead-course-service/ead-course'
+rm:
   broker:
     exchange:
-      userEvent: ead.userevent
+      userEvent: rm.userevent
 
 management:
   endpoints:
